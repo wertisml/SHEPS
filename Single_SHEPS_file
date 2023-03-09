@@ -13,7 +13,7 @@ ICD_10 <- fread("~\ICD Codes\\all_ICD10_codes.csv")
 
 # Set-up
 
-mini_sheps <- Sheps[1:1000,]
+mini_sheps <- Sheps
 
 dat2vec <- setNames(icd_codes$icd10, icd_codes$icd9)
 
