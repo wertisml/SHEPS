@@ -1,5 +1,5 @@
 # SHEPS
-To create ICD9 to ICD10 equivalents use the ICD9_to_10 along with the 2 .csv's in the folder, Convert_ICD9_to_10 works on a single file, the Read_Multiple_Sheps works on multiple SHEPS files at once.
+- These scripts will allow you to convert ICD-9 codes into corresponding ICD-10 codes. Additionally, you will be able to specify targeted outcomes that you are interested in and extract them from the original SHEPS file. This process should also work on other ICD-9/10 equivalent data sets but with a need to tailor column names to match new data.
 
 # Steps
 ## Pre data
