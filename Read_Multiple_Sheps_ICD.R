@@ -1,17 +1,17 @@
 library(data.table)
 library(dplyr)
 
-setwd("E:/Sheps/Sheps_2008_2020_filtered")
+setwd("~/Sheps/Sheps_2008_2020_filtered")
 
-dat.files  <- list.files(path="E:/Sheps/Sheps_2008_2020_filtered",
+dat.files  <- list.files(path="~/Sheps/Shep_files",
                          recursive=T,
                          pattern="\\.csv$",
                          full.names=T,
                          ignore.case=F,
                          no.. = TRUE)
 
-icd_codes <- fread("E:\\Sheps\\ICD_Codes\\all_ICD9_ICD10.csv")
-ICD_10 <- fread("E:\\Sheps\\ICD_Codes\\all_ICD10_codes.csv")
+icd_codes <- fread("~\\ICD_Codes\\all_ICD9_ICD10.csv")
+ICD_10 <- fread("~\\ICD_Codes\\all_ICD10_codes.csv")
 
 n = 2008
 
