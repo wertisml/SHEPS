@@ -17,7 +17,7 @@ sheps1 <- sheps1 %>%
   filter(zip5 <= 28909) %>%
   filter (zip5 != "NA")
 
-setwd("E:/Sheps/Sheps_2008_2020_filtered")
+setwd("~/SHEPS/Sheps_2008_2020_filtered")
 fwrite(sheps1, "sheps_2020_NC.csv")
 
 #==============================================================================#
