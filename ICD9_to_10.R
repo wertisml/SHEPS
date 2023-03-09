@@ -2,8 +2,8 @@ library(icdcoder)
 library(data.table)
 library(dplyr)
 
-ICD9 <- fread("C:\\Users\\wertisml\\Documents\\Sheps\\ICD Codes\\ICD9_Diag_Codes.csv", header = TRUE)
-ICD10 <- read.delim("C:\\Users\\wertisml\\Documents\\Sheps\\ICD Codes\\icd10cm_codes_2022.txt",
+ICD9 <- fread("~\\ICD Codes\\ICD9_Diag_Codes.csv", header = TRUE)
+ICD10 <- read.delim("~\\ICD Codes\\icd10cm_codes_2022.txt",
                     header = FALSE,
                     sep = " ")
                     
