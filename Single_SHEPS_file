@@ -1,15 +1,11 @@
-library(googledrive)
+library(dplyr)
 library(data.table)
 
 setwd("~/Sheps")
-# Download file from Google Drive
-#drive_auth()
-filep = drive_download("Inpatient_2008_NC.csv", overwrite = T) 
-# Read in the Google Drive file
-Sheps <- fread(filep$local_path)
+Sheps <- fread(file.choose())
 
-icd_codes <- fread("C:\\Users\\wertisml\\Documents\\Sheps\\ICD Codes\\all_ICD9_ICD10.csv")
-ICD_10 <- fread("C:\\Users\\wertisml\\Documents\\Sheps\\ICD Codes\\all_ICD10_codes.csv")
+icd_codes <- fread("~\\ICD Codes\\all_ICD9_ICD10.csv")
+ICD_10 <- fread("~\ICD Codes\\all_ICD10_codes.csv")
 
 #==============================================================================#
 # Convert ICD9 to ICD10 in the Sheps data
