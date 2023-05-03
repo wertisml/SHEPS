@@ -18,7 +18,7 @@ ICD_10 <- read_csv("/home/students/wertisml/Sheps/files/ICD_Codes/all_ICD10_code
 # Build filters
 #==============================================================================#
 
-# Create ICD-9 to ICD-10 conversion
+# Create ICD-9 to ICD-10 conversions
 dat2vec <- setNames(icd_codes$icd10, icd_codes$icd9)
 
 # Mental Health Cases
